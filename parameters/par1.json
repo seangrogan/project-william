@@ -1,3 +1,7 @@
 {
-  "name": "Project William"
+  "name": "Project William",
+  "tornadoes_as_path": "D:/Maps/Data/UnitedStates/NationalWeatherService/1950-2018-torn-aspath/1950-2018-torn-aspath.shp",
+  "tornadoes_as_initial_point" : "D:/Maps/Data/UnitedStates/NationalWeatherService/1950-2018-torn-initpoint/1950-2018-torn-aspath.shp",
+  "LSR": "D:/Maps/Data/UnitedStates/Oklahoma/LSRs_2000_01_01_to_2020_08_27/LSRs_2000_01_01_to_2020_08_27.shp",
+  "SBW": "D:/Maps/Data/UnitedStates/Oklahoma/SBWs_2000_01_01_to_2020_08_27/SBWs_2000_01_01_to_2020_08_27.shp"
 }

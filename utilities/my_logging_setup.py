@@ -4,14 +4,15 @@ from utilities.auto_create_folder import make_directory
 from utilities.time_for_filename import time_for_files
 
 
-def setup_logging(log_path=None, level=logging.DEBUG, out_to_log_and_console=True, console_level=logging.INFO):
+def setup_logging(log_path=None, level=logging.DEBUG, out_to_log_and_console=True,
+                  console_level=logging.INFO, project_name="PROJECT"):
     """
     Sets up my logging files
     :return:
     """
     [logging.root.removeHandler(handler) for handler in logging.root.handlers[:]]
-    log_path = './output/logs/' if log_path is None else log_path
-    fn = f'{log_path}/prj_anthony_{time_for_files()}.log'
+    log_path = './output/logs' if log_path is None else log_path
+    fn = f'{log_path}/{project_name}_{time_for_files()}.log'
     make_directory(fn)
     fmt_log = '%(asctime)s %(levelname)-9s [%(funcName)-24s] %(message)-120s [%(module)s : %(lineno)d]'
     logging.basicConfig(filename=fn, format=fmt_log, level=level)
